@@ -13,7 +13,7 @@ public class Classification_of_triangles {
 		int L2 = scanner.nextInt();
 		int L3 = scanner.nextInt();
 		
-		String result = ((L1+L2>L3 && L3+L1>L2 && L2+L3>L1))? ((L1==L2)&&(L2==L3)&&(L3==L1)) ? "Equilateral triangle" : (L1==L2)||(L2==L3)||(L3==L1) ? "isosceles triangle" : "scalene triangle" : "Not a triangle";
+		String result = ((L1+L2>L3 && L3+L1>L2 && L2+L3>L1))? (((L1==L2)&&(L2==L3)&&(L3==L1)) ? "Equilateral triangle" : (L1==L2)||(L2==L3)||(L3==L1) ? "isosceles triangle" : "scalene triangle" ): "Not a triangle";
 		System.out.println("This is "+ result);
 		scanner.close();
 

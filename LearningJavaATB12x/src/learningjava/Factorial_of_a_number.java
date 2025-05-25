@@ -10,7 +10,8 @@ public class Factorial_of_a_number {
 		System.out.println("Enter a number");
 		
 		if(!scanner.hasNextInt()) {
-			System.out.println("Enter less than a number");
+			System.out.println("Invalid input, Enter number only");
+			scanner.close();
 		}
 		int n = scanner.nextInt();
 		long factorial = 1;
@@ -35,7 +36,6 @@ public class Factorial_of_a_number {
 			}
 		}
 		
-		scanner.close();
 		
 	}
 
