@@ -8,12 +8,12 @@ public class Factorial_of_a_number {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter a number");
-		int n = 0 ;
-		long factorial = 1;
-		if(scanner.hasNextInt()) {
-			n = scanner.nextInt();
-		}
 		
+		if(!scanner.hasNextInt()) {
+			System.out.println("Enter less than a number");
+		}
+		int n = scanner.nextInt();
+		long factorial = 1;
 		if(n > Integer.MAX_VALUE) {
 			System.out.println("Enter less than " + Integer.MAX_VALUE);
 		}
