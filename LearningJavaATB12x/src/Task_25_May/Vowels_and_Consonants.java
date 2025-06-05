@@ -9,13 +9,15 @@ public class Vowels_and_Consonants {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter a string");
-		String str = scanner.nextLine();
-		str = str.toLowerCase();
-		int length = str.length();
+		String string = scanner.nextLine();
+		scanner.close();
+		string = string.toLowerCase();
+		int length = string.length();
 		int vowel_count = 0;
 		int con_count = 0;
+		
  		for(int i = 0; i<length; i++) {
- 			char ch = str.charAt(i);
+ 			char ch = string.charAt(i);
  			if(Character.isLetter(ch)) {
  				if((ch == 'a') || (ch == 'e') || (ch == 'i') 
  						|| (ch == 'o') || (ch == 'u')) {
@@ -27,7 +29,8 @@ public class Vowels_and_Consonants {
  			}
 			
 		}
- 		System.out.println(vowel_count + " & " + con_count);
+ 		System.out.println("No.of vowels in " + string + " : " + vowel_count);
+ 		System.out.println("No.of consonants in " + string + " : " + con_count);
 		
 		scanner.close();
 		
