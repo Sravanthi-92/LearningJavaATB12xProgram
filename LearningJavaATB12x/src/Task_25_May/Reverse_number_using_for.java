@@ -14,9 +14,8 @@ public class Reverse_number_using_for {
 			scanner.next();
 			
 		}
-		scanner.close();
 		int num = scanner.nextInt();
-		//scanner.close();
+		scanner.close();
 		int rev = 0;
 		if(num==0) {
 			System.out.println("reversed number is " + rev);
